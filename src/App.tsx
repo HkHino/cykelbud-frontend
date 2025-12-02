@@ -177,14 +177,16 @@ const App: React.FC = () => {
               }
             />
 
-            <Route
-              path="/employee"
-              element={
-                <PrivateRoute>
-                  <EmployeeHomePage />
-                </PrivateRoute>
-              }
-            />
+           
+<Route
+  path="/employee"
+  element={
+    <PrivateRoute>
+      <EmployeeHomePage />
+    </PrivateRoute>
+  }
+/>
+
 
             {/* Fallback: hvis route ikke findes → gå til /admin */}
             <Route path="*" element={<Navigate to="/admin" replace />} />

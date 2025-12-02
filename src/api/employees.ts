@@ -18,7 +18,7 @@ export function useEmployees() {
 
   return useQuery({
     queryKey: ["employees"],
-    queryFn: () => apiGet<EmployeeDto[]>("/api/employees", token || undefined),
+    queryFn: () => apiGet<EmployeeDto[]>("/api/Employees", token || undefined),
   });
 }
 

@@ -117,18 +117,27 @@
 
           {/* Knapper nederst */}
           <VStack spacing={4} align="stretch" mt={6}>
-            <Button size="lg" colorScheme="orange" onClick={handleCreateEmployee}>
-              Create new employee
-            </Button>
-            <Button
-              size="lg"
-              colorScheme="orange"
-              variant="outline"
-              onClick={handleGenerateShiftplan}
-            >
-              Generate 6 week shiftplan
-            </Button>
-          </VStack>
+  <Button size="lg" colorScheme="orange" onClick={handleCreateEmployee}>
+    Create new employee
+  </Button>
+  <Button
+    size="lg"
+    colorScheme="orange"
+    variant="outline"
+    onClick={handleGenerateShiftplan}
+  >
+    Generate 6 week shiftplan
+  </Button>
+  <Button
+    size="lg"
+    colorScheme="blue"
+    variant="outline"
+    onClick={() => navigate("/employee")}
+  >
+    Gå til employee view (test)
+  </Button>
+</VStack>
+
         </Box>
       </Box>
     );
