@@ -5,7 +5,6 @@ import {
   extendTheme,
   Box,
   Heading,
-  Text,
   Button,
   Input,
   VStack,
